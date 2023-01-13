@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="author" content="Vittorio Rossetto" />
+            <meta name="description" content="Esercitazione3" />
+            
+            <title>Esercitazione3</title>
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    
+        <style>
+            body{
+                max-width: 1200px;
+            }
+        </style>
+    
+    </head>
+    <body> 
+        <h1>Inserimento Progetto</h1>
+
+        <h2>Per inserire Impiegato:</h2>
+        <button onclick="window.location.href='index.html'">Impiegato</button>
+
+        <h2>Per inserire Dipartimento:</h2>
+        <button onclick="window.location.href='insDep.html'">Dipartimento</button>
+
+        <form action="insProj.php" method="post">
+
+            <fieldset>
+                <label>NOME_P</label>
+                <input type="text" name="NOME_P">
+            </fieldset>
+            <fieldset>
+                <label>NUMERO_P</label>
+                <input type="text" name="NUMERO_P">
+            </fieldset>
+            <fieldset>
+                <label>SEDE_P</label>
+                <input type="text" name="SEDE_P">
+            </fieldset>
+            <fieldset>
+                <label>NUM_D</label>
+                <input type="text" name="NUM_D">
+            </fieldset>
+            
+            <input type="submit" value="Inserisci"/>
+        </form>
+    </body>
+</html>
